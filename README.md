@@ -1,9 +1,9 @@
-#Pymaceuticals Analysis
+# Pymaceuticals Analysis
 
-##Overview
+## Overview
 The purpose of the Module 5 Challenge is to help a new pharmaceutical company that specializes in anti-cancer medications,Pymaceuticals,Inc..Pymaceuticals recently began testing for potential treatemnts for squamous cell carcinoma(SCC), a common form of skin cancer. We have been provided the data from their most recent study. In this study, 249 mice with SCC tumors received treatement with a range of drug regimens. During the 45 day treatment period, the tumor volume of each mouse was observed and measured in order to compare the performance of Pymaceuticals' drug, Capomulin, to the other treatments regimens. To help with the study, we generated the tables and figures needed for the techincal report of the clinical study and a top-level summary of the study results. 
 
-##Instructions
+## Instructions
     1. Prepare the data
     2. Generate summary statistics 
     3. Create bar charts and pie charts
@@ -12,21 +12,21 @@ The purpose of the Module 5 Challenge is to help a new pharmaceutical company th
     6. Calculate correlation and regression 
     7. Provide top-level summary and analysis of the study results 
 
-##Files
+## Files
  - "module_5_challenge"(https://github.com/jackthomas1430/module_5_challenge.git): The main repo for this challenge. 
-    -"data" folder: contains the the csv files used for the analysis 
-        -“Mouse_metadata.csv”: contains basic information for the 249 mice in the study, which are presented in the following columns: "Mouse ID","Drug Regimen", "Age_months","Weight (g)" 
-        -“Study_results.csv”: displays the study results in the following columns:"Mouse ID", "Timepoint","Tumor Volume (mm3)","Metastatic Sites"
-    -"Results/Images": contains images of all the results
-    -"pymaceuticals_analysis.ipynb": the main script for analysis
+    - "data" folder: contains the the csv files used for the analysis 
+        - “Mouse_metadata.csv”: contains basic information for the 249 mice in the study, which are presented in the following columns: "Mouse ID","Drug Regimen", "Age_months","Weight (g)" 
+        - “Study_results.csv”: displays the study results in the following columns:"Mouse ID", "Timepoint","Tumor Volume (mm3)","Metastatic Sites"
+    - "Results/Images": contains images of all the results
+    - "pymaceuticals_analysis.ipynb": the main script for analysis
     
-##Set Up
+## Set Up
     1. Clone the repository to your local device using git clone https://github.com/jackthomas1430/module_5_challenge.git
     2. Check that the “Mouse_metadata.csv” and “Study_results.csv” are located in the "data" folder
     3. Open "pymaceuticals_analysis.ipynb"
     4. Run all cells
     
-##Results 
+## Results 
 ![Meged DataFrame](module_5_challenge/Results:Images/Merged_DataFrame.png)
 ![Data from Duplicate DataFrame](module_5_challenge/Results:Images/duplicate_id_data.png)
 ![Clean DataFrame](module_5_challenge/Results:Images/Clean_DataFrame.png)
@@ -40,7 +40,7 @@ The purpose of the Module 5 Challenge is to help a new pharmaceutical company th
 ![Correlation and Linear Regression](module_5_challenge/Results:Images/WeightVolume_Correlation.png)
 
 
-##Summary/Analysis 
+## Summary/Analysis 
 
 Out of all the drug treatment groups, Capomulin and Ramicane have the most promising results. The summary statistics table shows that these two have the smallest mean and median tumor volumes. Ketapril has the largest average tumor volume at 55.2 mm3, while Capomulin has the second smallest at 40.68 mm3 and Ramicane has the smallest at 40.22 mm3. Capomulin and Ramicane are the only two drug regimens that have an average tumor volume below 50 mm3. It is important to note that both of these drugs also have the smallest variance and standard deviation in the group. They also have the largest sample size, as they have the highest number of observed mouse timepoints. 
 
@@ -50,7 +50,7 @@ The "Mouse Weight vs. Avg Tumor Volume" scatter plots present the potential impa
 
 The line plot for a single mouse treated with Capomulin is a positive indication for the potential effectiveness of the Capomulin treatment, as it shows the tumor volume decreasing throughout the 45 day treatment period. Creating a similar visual representation for every mouse in the study may indicate a need to further investigate the efficacy of Capomulin towards the end of the 45 day treatment period. The line chart for a single mouse shows that there are some instances in which the tumor volume begins to spike between the 30 to 45 day mark. However, this observation is based on too small of a sample size to make any meaningful conclusions.  
 
-##Acknowledgements
+## Acknowledgements
     
     Xpert Learning Assistant was used to answer detailed questions, and assist in debugging.The starter code provided was the base of the report and was modified using course curriculum and activities to fit the requirements of the assignment. The TA and instructor for the course also assisted in adjusting the code during office hours.For more information about the Xpert Learning Assistant, visit [EdX Xpert Learning Assistant](https://www.edx.org/). 
 
